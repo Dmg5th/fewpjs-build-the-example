@@ -1,8 +1,18 @@
 // Defining text characters for the empty and full hearts for you to use later.
 const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
+const error = document.querySelector("#modal")
 
-// Your JavaScript code goes here!
+error.innerHTML = `<div id="modal" class="hidden">
+                <h2>Error!</h2>
+                <p id="modal-message"></p>
+                </div>`
+
+mimicServerCall();
+
+
+
+
 
 
 
