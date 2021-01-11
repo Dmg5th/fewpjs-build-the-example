@@ -21,49 +21,12 @@ for (const heart of heartsArray) {
       modal.hidden = false
       const modalMessage = document.querySelector("#modal-message")
       modalMessage.innerText = error
-      setInterval(() => {
+      setTimeout(() => {
         modal.hidden = true
       }, 5000)
     })
   })
 }
-
-
-
-
-
-
-
-
-
-
-
-
-// for (const heart of heartsArray ) {
-//   heart.addEventListener("click", (e) => {
-//     mimicServerCall()
-//     .then(data => {
-//       if (heart.innerHTML === EMPTY_HEART) {
-//         heart.innerHTML = FULL_HEART
-//         heart.className = "activated-heart"
-//       } else{
-//         heart.innerHTML = EMPTY_HEART
-//         heart.className = "like-glyph"
-//       }
-//     })
-//   })
-// }
-
-
-
-
-
-
-
-
-
-
-
 
 //------------------------------------------------------------------------------
 // Ignore after this point. Used only for demo purposes
